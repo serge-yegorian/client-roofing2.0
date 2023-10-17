@@ -1,0 +1,386 @@
+@use '../../assets/styles/global.scss' as *;
+
+.home {
+    @include tablet {
+        padding: 2rem;
+    }
+    @include desktop {
+        padding: 0;
+    }
+
+    &__section {
+        padding: 1rem;
+        @include tablet {
+            padding: 0 2rem;
+            margin: 0 auto;
+        }
+    }
+
+    &__section--blog {
+        @include tablet {
+            padding: 0;
+        }
+        @include desktop {
+            padding: 0 2rem;
+        }
+        
+    }
+
+    &__container {
+        @include desktop {
+            display: flex;
+            gap: 2rem;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+    }
+
+    &__container--black {
+        background-color: rgba(0, 0, 0, 0.288);
+        width: 100%;
+        height: 100%;
+        padding: 2rem;
+            
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        @include desktop {
+            
+            
+            
+        }
+        
+    }
+
+    &__section--accent {
+        background-color: rgb(42, 46, 49);
+        @include tablet {
+            max-width: none;
+        }
+    }
+
+    &__section--flex-contact {
+        background-image: url('../../assets/images/contact.JPG') !important;
+    }
+
+    &__section--flex-team {
+        background-image: url('../../assets/images/team.JPG') !important;
+    }
+
+    &__section--flex-blog {
+        background-image: url('../../assets/images/blog.JPG') !important;
+    }
+
+    &__section--flex-projects {
+        background-image: url('../../assets/images/projects.jpg') !important;
+    }
+
+    &__section--flex {
+        background-image: url('../../assets/images/background.png');
+        background-size: cover;
+        background-position: center;
+        max-width: unset;
+        height: 100dvh;
+        color: white;
+            padding: 0rem;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+        @include desktop {
+            color: white;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+        }
+    }
+
+    &__section-container {
+        max-width: 20rem;
+    }
+
+    &__cta--desktop {
+        @include desktop {
+            display: none !important;
+        }
+    }
+
+    &__heading {
+        color: $main;
+        text-shadow:3px 3px #212121;
+        font-family: 'Rich', sans-serif;
+        margin-bottom: 1rem;
+        font-size: 2rem;
+        @include tablet {
+            font-size: 3rem;
+        }
+        @include desktop {
+            position: relative;
+            z-index: 10;
+        }
+    }
+
+    &__slogan {
+        font-family: 'Rich', sans-serif;
+        margin-bottom: 1rem;
+        text-shadow:3px 3px #212121;
+        font-size: 1.2rem;
+        @include tablet {
+            font-size: 1.4rem;
+        }
+        @include desktop {
+            position: relative;
+            z-index: 10;
+            max-width: 40rem;
+            font-size: 1.8rem;
+            margin: 0 auto;
+        }
+    }
+
+    &__description {
+        padding-bottom: 1rem;
+        @include tablet {
+            font-size: 1.2rem;
+            margin-bottom: 2rem;
+        }
+        
+    }
+
+    &__customer {
+        @include tablet {
+            font-size: 1.6rem;
+            margin-bottom: 0.5rem;
+        }
+        @include desktop {
+            width: fit-content;
+            margin-bottom: 1rem;
+        }
+    }
+
+    &__image {
+        display: none;
+        width: 100%;
+        @include desktop {
+            display: none;
+        }
+    }
+
+    &__cta {
+        font-size: 1.3rem;
+        padding: 0.5rem;
+        width: fit-content;
+        color: $main;
+        background-color: white;
+        border: 2px solid$main;
+        transition: 0.2s;
+        cursor: pointer;
+        margin-bottom: 1rem;
+        width: 100%;
+
+        @include tablet {
+            width: fit-content;
+            font-size: 1.6rem;
+            padding: 0 2rem;
+            height: 3rem;
+            display: block;
+            margin-bottom: 2rem;
+        }
+    }
+
+    &__cta:hover {
+        background-color: $main;
+        color: white;
+        border: 2px solid $main;
+    }
+
+    &__work {
+        width: 100%;
+        height: 100%;
+        margin-bottom: 1rem;
+        filter: grayscale(100%);
+        transition: 0.2s;
+        @include tablet {
+            margin-bottom: 2rem;
+        }
+    }
+
+    &__section {
+        margin-bottom: 3rem;
+    }
+
+    &__subheading {
+
+        font-size: 1.6rem;
+        margin-bottom: 1rem;
+        @include tablet {
+            font-size: 2rem;
+        }
+        @include desktop {
+            font-size: 2.4rem;
+        }
+    }
+
+    // &__container--projects {
+    //     flex-grow: 1;
+    // }
+
+    &__work-div {
+        min-height: 18rem;
+        width: 100%;
+        margin-bottom: 1rem;
+        position: relative;
+        cursor: pointer;
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        transition: 0.2s;
+        filter: grayscale(50%);
+
+        @include desktop {
+            margin-bottom: 0;
+            width: 18rem;
+            min-height: 18rem;
+            max-height: 20rem;
+            flex-grow: 1;
+
+        }
+    }
+
+    &__work-div:hover {
+        transform: scale(1.1);
+    }
+
+    &__work-div:hover &__date {
+        filter: none;
+        border: 2px solid #d10000;
+        color: #d10000;
+    }
+
+    &__testimonial-date {
+        font-weight: 200;
+        font-size: 0.8rem;
+        margin-bottom: 0.5rem;
+        @include tablet {
+            font-size: 1rem;
+            margin-bottom: 1rem;
+        }
+        @include desktop {
+            width: 100%;
+        }
+    }
+
+    &__testimonial {
+        padding: 1rem;
+        margin-bottom: 1rem;
+        @include tablet {
+            margin-bottom: 2rem;
+            margin-top: 2rem;
+        }
+
+        @include desktop {
+            border: none;
+            background-color: transparent;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            max-width: 20rem;
+        }
+    }
+
+    &__icon {
+        font-size: 8rem;
+    }
+
+    &__reason-div {
+        text-align: center;
+        margin-top: 1rem;
+        padding: 1rem;  
+        @include tablet {
+            margin-top: 2rem;
+        }
+    }
+
+    &__reason {
+        font-size: 1.2rem;
+        @include tablet {
+            font-size: 1.6rem;
+        }
+        @include desktop {
+            margin-bottom: 1rem;
+        }
+    }
+
+    &__blog-name {
+        @include tablet {
+            font-size: 1.6rem;
+        }
+    }
+
+    &__description--section {
+        font-size: 1.2rem;
+        @include tablet {
+            font-size: 1.4rem;
+        }
+        @include desktop {
+            font-size: 1.6rem;
+        }
+    }
+
+    &__blog-image {
+        width: 100%;
+        height: 20rem;
+        filter: grayscale(100%);
+        transition: 0.2s;
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+
+    &__blogpost {
+        margin-bottom: 2rem;
+        transition: 0.2s;
+        cursor: pointer;
+        width: 100%;
+        @include tablet {
+            flex-grow: 1;
+            width: 18rem;
+            margin-right: 2rem;
+        }
+        @include desktop {
+
+            height: fit-content;
+        }
+    }
+
+    &__inner {
+        padding: 1rem 1rem 0;
+    }
+
+    &__blogpost:hover &__blog-image {
+        filter: grayscale(0);
+    }
+
+    &__blogpost:hover {
+        background-color: black;
+        color: white;
+    }
+
+    &__section:last-of-type {
+        margin-bottom: 0;
+    }
+
+    &__container--blog {
+        display: flex;
+        flex-wrap: wrap;
+        @include tablet {
+            padding: 0;
+            gap: 0;
+        }
+        
+    }
+
+
+}

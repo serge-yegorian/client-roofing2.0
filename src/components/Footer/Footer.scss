@@ -1,0 +1,125 @@
+@use '../../assets/styles/global.scss' as *;
+
+.footer {
+    padding: 1rem;
+    background-color: black;
+    color: white;
+    @include tablet {
+        padding: 2rem;
+    }
+
+    &__content {
+        max-width: 1200px;
+        margin: 0 auto;
+    }
+
+    &__flex-container {
+        width: 100%;
+        padding: 0 1rem;
+        @include desktop {
+            padding: 0 2rem;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+        }
+    }
+
+    &__list {
+        list-style: none;
+    }
+
+    &__container {
+        margin-bottom: 2rem;
+        max-width: 660px;
+        flex-grow: 1;
+        margin-right: 2rem;
+        @include desktop {
+            max-width: 25%;
+        }
+        
+    }
+
+    &__li {
+        margin-bottom: 1rem;
+        cursor: pointer;
+        transition: 0.2s;
+    }
+
+    &__li:hover {
+        color: lightgray;
+    }
+
+    &__subheading {
+        margin-bottom: 1rem;
+        @include desktop {
+            font-size: 1.5rem;
+        }
+    }
+
+    &__description{
+        margin-bottom: 1rem;
+        font-size: 1rem;
+    }
+
+    &__input {
+            width: 80%;
+            height: 2.5rem;
+            border-radius: none;
+            outline: none;
+            padding:  0.5rem;
+            font-size: 1rem;
+            border: none;
+            background-color: black;
+            border: none;
+            color: white;
+    }
+
+    &__input-div {
+        position: relative;
+        display: flex;
+        border: 2px solid white;
+
+
+
+        margin-bottom: 6rem;
+        @include tablet {
+            margin-bottom: 0;
+        }
+    }
+
+    &__label {
+        position: absolute;
+        left: 0.5rem;
+        color: white;
+        top: 0.7rem;
+        background-color: black;
+        padding: 0 0.5rem;
+        transition: 0.2s;
+    }
+
+    &__input:focus ~ &__label,
+    &__input:valid ~ &__label {
+        transform: translateY(-0.9rem);
+        font-size: 0.8rem;
+    }
+
+    &__submit {
+        height: 2.5rem;
+        border: none;
+        background-color: white;
+        color: black;
+        width: 20%;
+        font-size: 1.5rem;
+        transition: 0.2s;
+        cursor: pointer;
+    }
+
+    &__submit:hover {
+        border-left: 2px solid white;
+        background-color: black;
+        color: white;
+    }
+
+
+
+}

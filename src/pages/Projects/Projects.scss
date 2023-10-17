@@ -1,0 +1,86 @@
+@use '../../assets/styles/global.scss' as *;
+
+.projects {
+
+    &__heading {
+        @include tablet {
+            font-size: 3rem;
+            margin-bottom: 1rem;
+        }
+    }
+
+    &__section {
+        padding: 1rem;
+        @include tablet {
+            padding: 2rem
+        }
+    };
+
+    &__image {
+        width: 100%;
+        height: 18rem;
+        background-size: cover;
+        background-position: center;
+        margin-bottom: 0;
+        border-bottom: 2px solid black;
+        filter: grayscale(100%);
+    }
+
+    &__slogan {
+        font-size: 1.2rem;
+        margin-bottom: 2rem;
+        @include tablet {
+            font-size: 1.4rem;
+        }
+        @include desktop {
+            font-size: 1.8rem;
+        }
+    }
+
+    &__container {
+        display: flex;
+        gap: 2rem;
+        flex-wrap: wrap;
+    }
+
+    &__project {
+        margin-bottom: 2rem;
+        transition: 0.2s;
+        cursor: pointer;
+        width: 18rem;
+        flex-grow: 1;
+    }
+
+    &__project:hover &__data {
+        background-color: black;
+        color: white;
+    }
+
+    &__project:hover &__image {
+        filter: none;
+    }
+
+    &__data {
+        padding: 1rem;
+        margin-top: -5px;
+        padding-left: 1rem;
+        padding-bottom: 1rem;
+        width: 100%;
+        line-height: 1;
+        transition: 0.2s;
+    }
+
+    &__city {
+        line-height: 1;
+        @include tablet {
+            font-size: 2rem;
+            margin-bottom: 1rem;
+        }
+    }
+
+    &__date {
+        @include tablet {
+            font-size: 1.4rem;
+        }
+    }
+}

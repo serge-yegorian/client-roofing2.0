@@ -1,0 +1,119 @@
+@use '../../assets/styles/global.scss' as *;
+
+.contact {
+    
+    &__section {
+        padding: 1rem;
+        margin: 0 auto;
+    @include tablet {
+        padding: 2rem;
+    }
+    }
+
+    @include desktop {
+        display: flex;
+        gap: 2rem;
+    }
+
+    &__section--form {
+        @include desktop {
+            width: 50%
+        }
+    };
+
+    &__section--image {
+        @include desktop {
+            width: 50%
+        }
+        
+    }
+
+
+    &__heading {
+        @include tablet {
+            font-size: 3rem;
+        margin-bottom: 1rem;
+        text-align: center;
+        }
+    }
+
+    &__image {
+        width: 100%;
+        margin-bottom: 1rem;
+    }
+
+    &__description {
+        text-align: center;
+        margin-bottom: 1rem;
+        @include tablet {
+            font-size: 1.4rem;
+            margin-bottom: 2rem;
+        }
+        @include desktop {
+            font-size: 1.8rem;
+        }
+    }
+
+    &__input {
+        width: 100%;
+        height: 2.5rem;
+        border-radius: none;
+        outline: none;
+        padding:  0.5rem;
+        font-size: 1rem;
+    }
+
+    &__input--textarea {
+        height: initial;
+        resize: none;
+    }
+
+    &__input-div {
+        position: relative;
+        margin-bottom: 1rem;
+        width:100%
+    }
+
+    &__label {
+        position: absolute;
+        left: 0.5rem;
+        color: black;
+        top: 0.7rem;
+        background-color: white;
+        padding: 0 0.5rem;
+        transition: 0.2s;
+        cursor: text;
+    }
+
+    &__input:focus ~ &__label,
+    &__input:valid ~ &__label {
+        transform: translateY(-0.8rem);
+        font-size: 0.8rem;
+    }
+
+    &__cta {
+        font-size: 1.3rem;
+        padding: 0.5rem;
+        width: fit-content;
+        color: $main;
+        background-color: white;
+        border: 2px solid $main;
+        transition: 0.2s;
+        cursor: pointer;
+        margin-bottom: 1rem;
+        width: 100%;
+    }
+
+    &__cta:hover {
+        background-color: $mainhover;
+        color: white;
+        border: 2px solid $mainhover;
+    }
+
+    &__form {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    
+}

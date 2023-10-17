@@ -1,0 +1,20 @@
+@mixin tablet {
+    @media (min-width: 481px) {
+        @content;
+    }
+}
+
+@mixin desktop {
+    @media (min-width: 726px) {
+        @content;
+    }
+}
+
+@mixin desktop-wide {
+    @media (min-width: 993px) {
+        @content;
+    }
+}
+
+$main: #cc9f52;
+$mainhover: #ffc800

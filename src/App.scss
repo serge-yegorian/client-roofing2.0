@@ -1,0 +1,55 @@
+@use './assets/styles/global.scss' as *;
+
+//global 
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Space Grotesk', sans-serif;
+}
+
+*::selection {
+    color:  #212121;
+    background-color: #F8F8FF;
+}
+
+.disable-scroll {
+    overflow: hidden;
+}
+
+body {
+    background-color: #212121;
+    color: #F8F8FF;
+}
+
+
+//fonts
+@font-face {
+    font-family:'Space Grotesk';
+    src: url('./assets/fonts/SpaceGrotesk-VariableFont_wght.ttf');
+    font-weight: 0 1000;
+    font-display: swap;
+}
+
+@font-face {
+    font-family:'Cornerstone';
+    src: url('./assets/fonts/Cornerstone.ttf');
+    font-weight: 0 1000;
+    font-display: swap;
+}
+
+@font-face {
+    font-family:'Halyard';
+    src: url('./assets/fonts/Halyard\ Text\ Regular.ttf');
+    font-weight: 0 1000;
+    font-display: swap;
+}
+
+@font-face {
+    font-family:'Rich';
+    src: url('./assets/fonts/The\ Rich.ttf');
+    font-weight: 0 1000;
+    font-display: swap;
+}
+
+

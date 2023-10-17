@@ -1,0 +1,102 @@
+@use '../../assets/styles/global.scss' as *;
+
+.blog {
+    
+    &__section {
+        padding: 1rem;
+    @include tablet {
+        padding: 2rem;
+        justify-content: center;
+        width: 100%;
+        display: flex;
+        gap: 2rem;
+        flex-wrap: wrap;
+        margin: 0 auto;
+    }
+    @include desktop {
+        justify-content: center;
+        width: 100%;
+        display: flex;
+        gap: 2rem;
+        flex-wrap: wrap;
+        margin: 0 auto;
+    }
+    }
+
+    &__heading {
+        width: 100%;
+        @include tablet {
+            font-size: 3rem;
+            margin-bottom: 1rem;
+        }
+    }
+
+    &__blogpost {
+        width: 18rem;
+        flex-grow: 1;
+        height: fit-content;
+    }
+
+    &__blog-image {
+        width: 100%;
+        height: 18rem;
+        background-size: cover;
+        background-position: center;
+
+    }
+
+    &__slogan {
+        font-size: 1.2rem;
+        margin-bottom: 2rem;
+        @include tablet {
+            font-size: 1.4rem;
+        }
+        @include desktop {
+            font-size: 1.8rem;
+        }
+    }
+
+    &__blog-name {
+        @include tablet {
+            font-size: 2rem;
+        }
+    }
+
+    &__description{
+        @include tablet {
+            font-size: 1.2rem;
+        }
+    }
+
+    &__blog-image {
+        width: 100%;
+        filter: grayscale(100%);
+        transition: 0.2s;
+    }
+
+    &__blogpost {
+        margin-bottom: 2rem;
+        transition: 0.2s;
+        cursor: pointer;
+        @include tablet {
+            margin-bottom: 3rem;
+        }
+    }
+
+    &__inner {
+        padding: 1rem;
+    }
+
+    &__blogpost:hover &__blog-image {
+        filter: grayscale(0);
+    }
+
+    &__blogpost:hover {
+        background-color: black;
+        color: white;
+    }
+
+    &__date {
+        margin-bottom: 1rem;
+    }
+}

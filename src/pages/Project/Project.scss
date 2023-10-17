@@ -1,0 +1,152 @@
+@use '../../assets/styles/global.scss' as *;
+
+.project {
+    @include desktop {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        max-width: 1200px;
+        margin: 0 auto;
+    }
+
+    &__image {
+        padding: 1rem;
+        width: 100%;
+        height: 60dvh;
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        @include tablet {
+            padding: 2rem;
+            
+        }
+        @include desktop {
+            margin-top: 10dvh;
+            width: calc(100% - 2rem);
+        }
+    }
+
+    & p {
+        @include tablet {
+            font-size: 1.2rem;
+        line-height: 1.8rem;
+        }
+        
+    }
+
+    & h2 {
+        @include tablet {
+            font-size: 1.8rem;
+        }
+        
+    }
+
+    &__date {
+        margin-top: 0 !important;
+        color: #f8f8ff;
+        text-shadow: 0 0 10px black;
+        width: fit-content;
+        font-size: 1.2rem;
+        margin-bottom: 3rem !important;
+    }
+
+    & a {
+        transition: 0.2s;
+        color: $main;
+    }
+
+    & a:hover {
+        color: $mainhover;
+    }
+
+
+    & h2 {
+        margin-top: 2rem;
+        margin-bottom: 1rem;
+    }
+
+    &__title {
+        font-size: 2rem;
+        color: #f8f8ff;
+        text-shadow: 0 0 10px black;
+        margin-bottom: 1rem;
+        margin-top: 1rem;
+        text-align: center;
+        @include tablet {
+            font-size: 2.5rem;
+        }
+    }
+
+    &__container {
+        
+        height: fit-content;
+        display: flex;
+        flex-direction: column;
+        @include tablet {
+            margin-top: 2rem;
+            position: sticky;
+            top: 10rem;
+            padding-bottom: 2rem;
+        }
+        @include desktop {
+            width: 22rem;
+        }
+    }
+
+    &__article {
+        position: relative;
+        @include tablet {
+            display: flex;
+            padding: 0 2rem;
+            min-height: 100%; 
+        }
+    }
+
+    &__cta {
+        font-size: 1.3rem;
+        padding: 0.5rem;
+        width: fit-content;
+        color: $main;
+        background-color: white;
+        border: 2px solid $main;
+        transition: 0.2s;
+        cursor: pointer;
+        margin-bottom: 1rem;
+        width: 100%;
+    }
+
+    &__cta--secondary {
+        color: black;
+        border: 2px solid black;
+    }
+
+    &__cta:hover {
+        background-color: $mainhover;
+        color: white;
+        border: 2px solid $mainhover;
+    }
+
+    &__cta--secondary:hover {
+        background-color: black;
+        background-image: none;
+    }
+
+    &__content {
+        margin-bottom: 2rem;
+        padding: 0 1rem;
+        @include tablet {
+            padding: 0;
+            max-width: 80%;
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            margin-right: 2rem;
+        }
+    }
+
+    
+}

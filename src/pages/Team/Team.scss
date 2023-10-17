@@ -1,0 +1,125 @@
+@use '../../assets/styles/global.scss' as *;
+
+.team {
+    
+    &__section {
+        padding: 1rem;
+    @include tablet {
+        padding: 2rem;
+    }
+    }
+
+    &__heading {
+        margin-bottom: 1rem;
+        @include tablet {
+            font-size: 3rem;
+            margin-bottom: 1rem;
+        }
+    }
+
+    &__container {
+        @include desktop {
+            display: flex;
+            gap: 2rem;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+    }
+
+    &__subheading {
+        margin-bottom: 1rem;
+        @include tablet {
+            font-size: 2rem;
+            margin-bottom: 2rem;
+        }
+    }
+
+    &__description {
+        margin-bottom: 1rem;
+    }
+
+    &__image{
+        width: 100%;
+        min-height: 12rem;
+        background-position: center;
+        background-size: cover;
+    } 
+
+    &__image--kevin {
+        background-image: url('../../assets/images/worker1.png');
+    }
+
+    &__image--rodrigo {
+        background-image: url('../../assets/images/worker2.png');
+    }
+
+    &__image--renaldo {
+        background-image: url('../../assets/images/worker3.png');
+    }
+
+    &__member {
+        margin-bottom: 2rem;
+        flex-grow: 1;
+        @include desktop {
+            max-width: 30%;
+        }
+        
+    }
+
+    &__name {
+        margin-bottom: 1rem;
+        @include tablet {
+            font-size: 2rem;
+        }
+    }
+
+    &__content {
+        padding: 1rem;
+        padding-right: 2rem;
+    }
+
+    &__description {
+        font-size: 1.2rem;
+    }
+
+    &__slogan {
+        margin-bottom: 2rem;
+        font-size: 1.2rem;
+        @include tablet {
+            font-size: 1.4rem;
+        }
+        @include desktop {
+            font-size: 1.8rem;
+        }
+    }
+
+    &__cta {
+        font-size: 1.3rem;
+        padding: 0.5rem;
+        width: fit-content;
+        color: #FF0000;
+        background-color: white;
+        border: 2px solid #FF0000;
+        transition: 0.2s;
+        cursor: pointer;
+        margin-bottom: 1rem;
+        width: 100%;
+        @include tablet {
+            width: fit-content;
+            font-size: 1.6rem;
+            padding: 0 2rem;
+            height: 3rem;
+            display: block;
+            margin-bottom: 2rem;
+        }
+    }
+
+    &__cta:hover {
+        background-image: linear-gradient(to bottom, #FF3333, #FF0000);
+        color: white;
+    }
+
+    &__cta--main {
+        width: 100%;
+    }
+}
