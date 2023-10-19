@@ -37,7 +37,7 @@ const CreateProject = () => {
         data.append("summary", summary)
         data.append("projectContent", projectContent)
         data.append("dateFinished", dateFinished)
-        axios.post('https://clownfish-app-f6era.ondigitalocean.app/project/project', data)
+        axios.post('https://clownfish-app-f6era.ondigitalocean.app/roofingProject/project', data)
         .then((response)=>{
             console.log(response.data)
             navigate(`/project/${response.data._id}`)

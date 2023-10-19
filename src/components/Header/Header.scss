@@ -37,8 +37,7 @@
         @include desktop {
             display: block;
             height: calc(4rem - 2px);
-            padding-top: 1rem;
-            padding-bottom: 1rem;
+            padding: 0.5rem 0;
         }
     }
 

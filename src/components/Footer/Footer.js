@@ -30,8 +30,8 @@ const Footer = () => {
                 <p className='footer__description'>linkedin</p>
             </div>
             <div className='footer__container'>
-                <h3 className='footer__subheading'>Palm Beach Kitchens and Baths:</h3>
-                <p className='footer__description'>Palm Beach Kitchens and Baths is your trusted partner in creating the perfect cabinetry solutions for your space.</p>
+                <h3 className='footer__subheading'>Optimum Roofing:</h3>
+                <p className='footer__description'>Optimum Roofing is your trusted partner in creating the perfect roof for your house.</p>
             </div>
             </div>
         </footer>

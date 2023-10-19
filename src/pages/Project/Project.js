@@ -22,7 +22,7 @@ const Project = () => {
             window.scrollTo({
                 top: 0
             });
-        axios.get(`https://clownfish-app-f6era.ondigitalocean.app/project/project/${projectId}`)
+        axios.get(`https://clownfish-app-f6era.ondigitalocean.app/roofingProject/project/${projectId}`)
         .then((response) => {
             console.log(response.data)
             setTitle(response.data.title)

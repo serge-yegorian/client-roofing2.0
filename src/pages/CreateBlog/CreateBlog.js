@@ -37,7 +37,7 @@ const CreateBlog = () => {
         data.append("summary", summary)
         data.append("projectContent", projectContent)
         data.append("dateFinished", dateFinished)
-        axios.post('https://clownfish-app-f6era.ondigitalocean.app/blog/blogpost', data)
+        axios.post('https://clownfish-app-f6era.ondigitalocean.app/roofingBlog/blogpost', data)
         .then((response)=>{
             console.log(response.data)
             navigate(`/blog/${response.data._id}`)

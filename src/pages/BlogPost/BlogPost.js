@@ -25,7 +25,7 @@ const BlogPost = () => {
                 top: 0
             });
         
-        axios.get(`https://clownfish-app-f6era.ondigitalocean.app/blog/blogpost/${projectId}`)
+        axios.get(`https://clownfish-app-f6era.ondigitalocean.app/roofingBlog/blogpost/${projectId}`)
         .then((response) => {
             console.log(response.data)
             setTitle(response.data.title)

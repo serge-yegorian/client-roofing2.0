@@ -18,7 +18,7 @@ const Projects = () => {
     })
 
     useEffect(()=> {
-        axios.get('https://clownfish-app-f6era.ondigitalocean.app/project/projects')
+        axios.get('https://clownfish-app-f6era.ondigitalocean.app/roofingProject/projects')
         .then((response) => {
             setProjects(response.data);
             console.log(projects)

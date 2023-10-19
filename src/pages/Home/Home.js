@@ -12,7 +12,7 @@ const Home = () => {
     const [blogposts, setBlogposts] = useState([]);
 
     useEffect(()=> {
-        axios.get('https://clownfish-app-f6era.ondigitalocean.app/project/projects')
+        axios.get('https://clownfish-app-f6era.ondigitalocean.app/roofingProject/projects')
         .then((response) => {
             setProjects(response.data);
             console.log(projects)
@@ -23,7 +23,7 @@ const Home = () => {
     }, []) 
 
     useEffect(() => {
-        axios.get('https://clownfish-app-f6era.ondigitalocean.app/blog/blogposts')
+        axios.get('https://clownfish-app-f6era.ondigitalocean.app/roofingBlog/blogposts')
         .then((response) => {
             setBlogposts(response.data);
             console.log(blogposts)
@@ -42,8 +42,8 @@ const Home = () => {
                 <section className='home__section home__section--flex'>
                     <div className='home__container home__container--black'>
                         <div>
-                        <h1 className='home__heading'>Palm Beach<br/> Kitchens and Baths</h1>
-                        <p className='home__slogan'>ENHANCING LIVES THROUGH DESIGN</p>
+                        <h1 className='home__heading'>Optimum Roffing</h1>
+                        <p className='home__slogan'>THE FUTURE OF ROOFING</p>
                         </div>
                     </div>
                     <div className='home__container'>
