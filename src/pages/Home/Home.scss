@@ -27,6 +27,7 @@
     }
 
     &__container {
+        gap: 2rem;
         @include desktop {
             display: flex;
             gap: 2rem;
@@ -43,6 +44,7 @@
         display: flex;
         justify-content: center;
         align-items: center;
+        flex-direction: column;
         border-radius: 4px;
         cursor: pointer;
         transition: 0.2s;
@@ -399,14 +401,12 @@
     }
 
     &__blogpost {
-        margin-bottom: 2rem;
         transition: 0.2s;
         cursor: pointer;
         width: 100%;
         @include tablet {
             flex-grow: 1;
             width: 18rem;
-            margin-right: 2rem;
         }
         @include desktop {
 
@@ -436,7 +436,7 @@
         flex-wrap: wrap;
         @include tablet {
             padding: 0;
-            gap: 0;
+            gap: 2;
         }
         
     }

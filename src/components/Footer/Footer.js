@@ -16,10 +16,6 @@ const Footer = () => {
                     <li onClick={()=>navigate('/blog')} className='footer__li'>Blog</li>
                     <li onClick={()=>navigate('/team')} className='footer__li'>Team</li>
                     <li onClick={()=>navigate('/contact')} className='footer__li footer__li--cta'>Contact</li>
-                    <li onClick={()=>navigate('/future')} className='footer__li footer__li--cta'>Future</li>
-                    <li onClick={()=>navigate('/associations')} className='footer__li footer__li--cta'>Associations</li>
-                    <li onClick={()=>navigate('/4weeks')} className='footer__li footer__li--cta'>4 Weeks</li>
-                    <li onClick={()=>navigate('/financing')} className='footer__li footer__li--cta'>Financing</li>
                 </ul>
             </div>
             <div className='footer__container'>
