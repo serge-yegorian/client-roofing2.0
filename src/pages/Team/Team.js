@@ -1,15 +1,8 @@
 import Footer from '../../components/Footer/Footer';
 import Header from '../../components/Header/Header';
 import './Team.scss';
-import { useEffect } from 'react';
 
 const Team = () => {
-
-    useEffect(()=> {
-        window.scrollTo({
-            top: 0
-        });
-    })
 
 return (
     <>

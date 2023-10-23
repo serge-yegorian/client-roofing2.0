@@ -7,13 +7,6 @@ const FourWeeks = () => {
 
     const navigate =  useNavigate()
 
-    const [hidden, setHidden] = useState(true)
-
-    const toggleVisibility = (e) => {
-        e.preventDefault();
-        setHidden(true)
-    }
-
     return (
         <>
         <Header/>
@@ -32,7 +25,7 @@ const FourWeeks = () => {
             <section className='home__section home__section--accent home__section--landing'>
                 <div className='home__container'>
                 <div className='home__testimonial home__testimonial--landing' onClick={()=>navigate('/contact')}>
-                        <h3 className={`home__customer ${hidden? `home__customer--landing` : `home__customer--hidden`}`}>Shorter lead times</h3>
+                        <h3 className={`home__customer ${ `home__customer--landing` `home__customer--hidden`}`}>Shorter lead times</h3>
                         <h3 className={`home__customer  home__customer--sub`}>A new roof in 4 weeks VS months of waiting</h3>
                     </div>
                     <div className='home__testimonial home__testimonial--landing' onClick={()=>navigate('/contact')}>

@@ -1,19 +1,11 @@
 import './Financing.scss'
 import Header from '../../components/Header/Header';
 import Footer from '../../components/Footer/Footer';
-import { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 
 const Financing = () => {
 
     const navigate =  useNavigate()
-
-    const [hidden, setHidden] = useState(false)
-
-    const toggleVisibility = (e) => {
-        e.preventDefault();
-        setHidden(true)
-    }
 
     return (
         <>
@@ -33,8 +25,8 @@ const Financing = () => {
             <section className='home__section home__section--accent'>
                 <div className='home__container'>
                     <div className='home__testimonial home__testimonial--landing' onClick={()=>navigate('/contact')}>
-                        <h3 className={`home__customer ${hidden? `home__customer--landing` : `home__customer--hidden`}`}>$0 down</h3>
-                        <h3 className={`home__customer ${hidden? `home__customer--hidden` : `home__customer--landing`}`}>Contact</h3>
+                        <h3 className={`home__customer ${ `home__customer--landing`  `home__customer--hidden`}`}>$0 down</h3>
+                        <h3 className={`home__customer ${ `home__customer--hidden`  `home__customer--landing`}`}>Contact</h3>
                     </div>
                     <div className='home__testimonial home__testimonial--landing' onClick={()=>navigate('/contact')}>
                         <h3 className='home__customer home__customer--landing'>Most properties qualify</h3>
