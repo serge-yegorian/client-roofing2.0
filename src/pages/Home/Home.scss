@@ -31,8 +31,62 @@
             display: flex;
             gap: 2rem;
             justify-content: center;
+            align-items: center;
             flex-wrap: wrap;
         }
+    }
+
+    &__testimonial--landing {
+        flex-grow: 1;
+        background-color: black !important;
+        min-height: 18rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 4px;
+        cursor: pointer;
+        transition: 0.2s;
+        margin: 0 !important;
+    }
+
+    &__section--landing {
+        padding: 1rem;
+        @include desktop {
+            padding: 2rem;
+        }
+        
+    }
+
+    &__testimonial--landing:hover {
+        transform: scale(110%);
+        background-color: rgb(255, 255, 255) !important;
+        
+    }
+
+    &__testimonial--landing:hover &__customer--sub {
+        color: black !important;
+        font-size: 1.2rem;
+    }
+
+    &__testimonial--landing:hover &__customer--landing {
+        color: $mainhover !important;
+        font-size: 1.7rem;
+    }
+
+    &__customer--hidden {
+        display: none;
+    }
+
+    &__customer--sub {
+        font-size: 1.2rem !important;
+        text-align: center;
+        margin-top: 0.5rem;
+    }
+
+    &__customer--landing {
+        margin-bottom: 0 !important;
+        text-align: center;
+        color: $main;
     }
 
     &__container--black {
@@ -74,6 +128,11 @@
 
     &__section--flex-projects {
         background-image: url('../../assets/images/project2.jpeg') !important;
+    }
+
+    &__section--financing {
+        background-image: url('../../assets/images/financing.jpeg') !important;
+        margin-bottom: 0 !important;
     }
 
     &__section--flex {

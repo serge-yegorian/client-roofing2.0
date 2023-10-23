@@ -31,7 +31,7 @@ const Footer = () => {
             </div>
             <div className='footer__container'>
                 <h3 className='footer__subheading'>Optimum Roofing:</h3>
-                <p className='footer__description'>Optimum Roofing is your trusted partner in creating the perfect roof for your house.</p>
+                <p className='footer__description'>Optimum Roofing is your trusted partner in creating the perfect roof for your house.<br/><br/>Contractor license: CGC1526225</p>
             </div>
             </div>
         </footer>

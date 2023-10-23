@@ -42,7 +42,7 @@ const Home = () => {
                 <section className='home__section home__section--flex'>
                     <div className='home__container home__container--black'>
                         <div>
-                        <h1 className='home__heading'>Optimum Roffing</h1>
+                        <h1 className='home__heading'>Optimum Roffing Solutions</h1>
                         <p className='home__slogan'>THE FUTURE OF ROOFING</p>
                         </div>
                     </div>
