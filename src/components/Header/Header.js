@@ -5,6 +5,12 @@ import { useState, useEffect } from 'react';
 
 const Header = () => {
 
+    useEffect(()=> {
+        window.scrollTo({
+            top: 0
+        });
+    })
+
     const navigate = useNavigate();
 
     const toggleMenu = (e) => {
