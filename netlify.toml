@@ -4,21 +4,3 @@
   to = "/index.html"
   status = 200
 
-[[headers]]
-  # Cache static assets for one year (adjust as needed)
-  for = "/*.js"
-  [headers.values]
-    Cache-Control = "public, max-age=31536000"
-
-  # Cache HTML and other assets for a short duration
-  for = "/index.html"
-  [headers.values]
-    Cache-Control = "public, max-age=0, must-revalidate"
-
-  # Enable security headers (adjust as needed)
-  for = "/*"
-  [headers.values]
-    X-Content-Type-Options = "nosniff"
-    X-Frame-Options = "DENY"
-    Referrer-Policy = "no-referrer-when-downgrade"
-    Feature-Policy = "camera 'none'; microphone 'none'"
