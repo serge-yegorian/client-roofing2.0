@@ -25,8 +25,8 @@ const Financing = () => {
             <section className='home__section home__section--accent'>
                 <div className='home__container'>
                     <div className='home__testimonial home__testimonial--landing' onClick={()=>navigate('/contact')}>
-                        <h3 className={`home__customer ${ `home__customer--landing`  `home__customer--hidden`}`}>$0 down</h3>
-                        <h3 className={`home__customer ${ `home__customer--hidden`  `home__customer--landing`}`}>Contact</h3>
+                        <h3 className={`home__customer home__customer--landing  home__customer--hidden`}>$0 down</h3>
+                        <h3 className={`home__customer home__customer--hidden  home__customer--landing`}>Contact</h3>
                     </div>
                     <div className='home__testimonial home__testimonial--landing' onClick={()=>navigate('/contact')}>
                         <h3 className='home__customer home__customer--landing'>Most properties qualify</h3>
