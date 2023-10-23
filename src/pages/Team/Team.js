@@ -25,14 +25,14 @@ return (
                 <div className='team__member'>
                 {/* <div className='team__image team__image--kevin'>
                 </div> */}
-                <img className='team__image' alt='image of Kevin Keene' src={require('../../assets/images/worker1.png')}/>
+                <img className='team__image' alt='Kevin Keene' src={require('../../assets/images/worker1.png')}/>
                     <div className='team__content'>
                         <h3 className='team__name'>Kevin Keene</h3>
                         <p className='team__description'>Kevin has over 2,000,000 ft.² of residential construction experience and 25 years dedicated to cabinetry design and finishing. His experience and passion creates a unique one of a kind result</p>
                     </div>
                 </div>
                 <div className='team__member'>
-                <img className='team__image' alt='image of Rodrigo' src={require('../../assets/images/worker2.png')}/>
+                <img className='team__image' alt=' Rodrigo' src={require('../../assets/images/worker2.png')}/>
                 {/* <div className='team__image team__image--rodrigo'>
                 </div> */}
                     <div className='team__content'>
@@ -42,7 +42,7 @@ Rodrigo thrives on pushing the boundaries of design, making him the ideal choice
                     </div>
                 </div>
                 <div className='team__member'>
-                    <img className='team__image' alt='image of Renaldo' src={require('../../assets/images/worker3.png')}/>
+                    <img className='team__image' alt=' Renaldo' src={require('../../assets/images/worker3.png')}/>
                 {/* <div className='team__image team__image--renaldo'>
                 </div> */}
                     <div className='team__content'>
