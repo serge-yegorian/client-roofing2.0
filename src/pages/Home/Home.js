@@ -66,7 +66,7 @@ const Home = () => {
                             <h4 className='home__testimonial-date'>July 2022</h4>
                         </div>
                         <div className='home__testimonial'>
-                            <h3 className='home__customer'>Rich Cleveland</h3>
+                            <h3 className='home__customer'>Fredrick Slapa</h3>
                             <p className='home__description'>Optimum Roofing Solutions has left a lasting impression on me.<br/><br/> Their dedication to precision and their innovative approach to roofing is truly impressive.<br/><br/> I've had the opportunity to collaborate with various companies, but unique blend of creativity and craftsmanship sets them apart. </p>
                             <h4 className='home__testimonial-date'>December 2021</h4>
                         </div>
