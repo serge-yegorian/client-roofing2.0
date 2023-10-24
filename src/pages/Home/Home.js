@@ -62,23 +62,23 @@ const Home = () => {
                     <div className='home__container'>
                         <div className='home__testimonial'>
                             <h3 className='home__customer'>Anna Oscar</h3>
-                            <p className='home__description'>Collaborating with Palm Beach Kitchens and Baths has been life-changing.<br/><br/> Their design prowess and attentive service truly stand out.<br/><br/> For extraordinary home transformations, Palm Beach Kitchens and Baths is the ultimate choice!</p>
+                            <p className='home__description'>Collaborating with Optimum Roofing Solutions has been life-changing.<br/><br/> Their design prowess and attentive service truly stand out.<br/><br/> For extraordinary home transformations, Optimum Roofing Solutions is the ultimate choice!</p>
                             <h4 className='home__testimonial-date'>July 2022</h4>
                         </div>
                         <div className='home__testimonial'>
                             <h3 className='home__customer'>Rich Cleveland</h3>
-                            <p className='home__description'>Palm Beach Kitchens and Baths has left a lasting impression on me.<br/><br/> Their dedication to precision and their innovative approach to cabinetry is truly impressive.<br/><br/> I've had the opportunity to collaborate with various companies, but unique blend of creativity and craftsmanship sets them apart. </p>
+                            <p className='home__description'>Optimum Roofing Solutions has left a lasting impression on me.<br/><br/> Their dedication to precision and their innovative approach to cabinetry is truly impressive.<br/><br/> I've had the opportunity to collaborate with various companies, but unique blend of creativity and craftsmanship sets them apart. </p>
                             <h4 className='home__testimonial-date'>December 2021</h4>
                         </div>
                         <div className='home__testimonial'>
                             <h3 className='home__customer'>Dan Hassan</h3>
-                            <p className='home__description'>Partnering with Palm Beach Kitchens and Baths has transformed my home.<br/><br/> Their expertise in kitchen and bath design, along with their superb customer service, made the entire process a pleasure.<br/><br/> For exceptional home upgrades, Palm Beach Kitchens and Baths is the name to trust!</p>
+                            <p className='home__description'>Partnering with Optimum Roofing Solutions has transformed my home.<br/><br/> Their expertise in kitchen and bath design, along with their superb customer service, made the entire process a pleasure.<br/><br/> For exceptional home upgrades, Optimum Roofing Solutions is the name to trust!</p>
                             <h4 className='home__testimonial-date'>June 2022</h4>
                         </div>
                         <div className='home__testimonial'>
                             <h3 className='home__customer'>Rodrigo Ferrierra De Castro</h3>
-                            <p className='home__description'>Teaming up with Palm Beach Kitchens and Baths is a game-changer.
-                                Their kitchen and bath design know-how, plus top-tier service, made it a delightful journey.<br/><br/>For unmatched home enhancements, trust Palm Beach Kitchens and Baths!</p>
+                            <p className='home__description'>Teaming up with Optimum Roofing Solutions is a game-changer.
+                                Their kitchen and bath design know-how, plus top-tier service, made it a delightful journey.<br/><br/>For unmatched home enhancements, trust Optimum Roofing Solutions!</p>
                             <h4 className='home__testimonial-date'>October 2022</h4>
                         </div>
                     </div>
