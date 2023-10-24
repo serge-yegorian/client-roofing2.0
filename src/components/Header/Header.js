@@ -9,7 +9,7 @@ const Header = () => {
         window.scrollTo({
             top: 0
         });
-    })
+    }, [])
 
     const navigate = useNavigate();
 
