@@ -42,12 +42,12 @@ Rodrigo thrives on pushing the boundaries of design, making him the ideal choice
                     </div>
                 </div>
                 <div className='team__member'>
-                    <img className='team__image' alt=' Renaldo' src={require('../../assets/images/worker3.png')}/>
+                    <img className='team__image' alt=' Will' src={require('../../assets/images/worker3.png')}/>
                 {/* <div className='team__image team__image--renaldo'>
                 </div> */}
                     <div className='team__content'>
-                        <h3 className='team__name'>Renaldo De Souza</h3>
-                        <p className='team__description'>With over 25 years of Woodworking and cabinet experience, Ronaldo is a critical part of our installation team, making sure that the final product is exemplary.</p>
+                        <h3 className='team__name'>Willie Brown</h3>
+                        <p className='team__description'>Is a Licensed Roofing Contractor CCC13332415 with 35 Years Roofing Experience in Florida.  Willie has both extensive residential and commercial experience and has completed millions of square feet of roofing for Associations.  His passion for roofing shows in our daily results!</p>
                     </div>
                 </div>
             </div>
