@@ -28,7 +28,7 @@ return (
                 <img className='team__image' alt='Kevin Keene' src={require('../../assets/images/worker1.png')}/>
                     <div className='team__content'>
                         <h3 className='team__name'>Kevin Keene</h3>
-                        <p className='team__description'>Kevin has over 2,000,000 ft.² of residential construction experience and 25 years dedicated to cabinetry design and finishing. His experience and passion creates a unique one of a kind result</p>
+                        <p className='team__description'>Kevin has over 2,000,000 ft.² of residential construction experience and 25 years dedicated to cabinetry design and finishing. His experience and passion creates a unique one of a kind result<br/>Constructor license: CGC1526225</p>
                     </div>
                 </div>
                 <div className='team__member'>
