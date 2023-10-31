@@ -21,7 +21,7 @@ const Footer = () => {
             <div className='footer__container'>
                 <h3 className='footer__subheading'>Contact Us:</h3>
                 <p className='footer__description'>(866) 869-6166</p>
-                <p className='footer__description'>optimumfloridakitchencabinets@gmail.com</p>
+                <p className='footer__description'>rich@optimumroof.com</p>
             </div>
             <div className='footer__container'>
                 <h3 className='footer__subheading'>Social Media:</h3>
