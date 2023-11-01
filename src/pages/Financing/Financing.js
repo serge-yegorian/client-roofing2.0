@@ -109,20 +109,20 @@ const Financing = () => {
                 <p className='contact__description'>We answer in less than 24 hours</p>
                 <a className='contact__description contact__description--phone' href='tel:866-869-6166' >(866) 869-6166</a>
                 <div className='contact__input-div'>
-                    <input required className='contact__input' name='name' id='name' />
-                    <label className='contact__label' htmlFor='name'>Name:</label>
+                    <input required className='contact__input' name='name' id='name2' />
+                    <label className='contact__label' htmlFor='name2'>Name:</label>
                 </div>
                 <div className='contact__input-div'>
-                    <input required className='contact__input' name='phone' id='phone' />
-                    <label className='contact__label' htmlFor='phone'>Phone:</label>
+                    <input required className='contact__input' name='phone' id='phone2' />
+                    <label className='contact__label' htmlFor='phone2'>Phone:</label>
                 </div>
                 <div className='contact__input-div'>
-                    <input required className='contact__input' name='email' id='email' />
-                    <label className='contact__label' htmlFor='email'>Email:</label>
+                    <input required className='contact__input' name='email' id='email2' />
+                    <label className='contact__label' htmlFor='email2'>Email:</label>
                 </div>
                 <div className='contact__input-div'>
-                    <textarea required className='contact__input contact__input--textarea' rows={5} name='message' id='message' />
-                    <label className='contact__label' htmlFor='message'>How can we help:</label>
+                    <textarea required className='contact__input contact__input--textarea' rows={5} name='message' id='message2' />
+                    <label className='contact__label' htmlFor='message2'>How can we help:</label>
                 </div>
                 <button className='contact__cta'>Submit</button>
             </form>
