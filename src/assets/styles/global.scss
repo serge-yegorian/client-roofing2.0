@@ -16,5 +16,11 @@
     }
 }
 
+@mixin desktop-max {
+    @media (min-width: 1800px) {
+        @content;
+    }
+}
+
 $main: #cc9f52;
 $mainhover: #ffc800

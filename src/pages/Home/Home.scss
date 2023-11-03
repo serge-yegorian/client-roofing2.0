@@ -181,6 +181,9 @@
             position: relative;
             z-index: 10;
         }
+        @include desktop-max {
+            font-size: 5rem;
+        }
     }
 
     &__slogan {
@@ -197,6 +200,9 @@
             max-width: 40rem;
             font-size: 1.8rem;
             margin: 0 auto;
+        }
+        @include desktop-max {
+            font-size: 2.5rem;
         }
     }
 
