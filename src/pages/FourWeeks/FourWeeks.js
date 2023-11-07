@@ -42,8 +42,8 @@ const FourWeeks = () => {
             <section className='home__section home__section--flex home__section--financing'>
                 <div className='home__container home__container--black'>
                     <div>
-                    <h1 className='home__heading'>100% Financing</h1>
-                    <p className='home__slogan'>Financing a new roof has never been easier!</p>
+                    <h1 className='home__heading'>4 Week Roof</h1>
+                    <p className='home__slogan'>Building a new roof has never been faster!</p>
                     </div>
                     <div className='home__form'>
                     <form className='contact__form contact__form--landing' onSubmit={sendEmail} ref={formRef}>
@@ -74,31 +74,31 @@ const FourWeeks = () => {
             </section>
             <section className='home__section home__section--accent home__section--landing'>
                 <div className='home__container'>
-                <div className='home__testimonial home__testimonial--landing' onClick={()=>navigate('/contact')}>
+                <div className='home__testimonial home__testimonial--landing' >
                         <h3 className={`home__customer home__customer--landing `}>Shorter lead times</h3>
                         <h3 className={`home__customer  home__customer--sub`}>A new roof in 4 weeks VS months of waiting</h3>
                     </div>
-                    <div className='home__testimonial home__testimonial--landing' onClick={()=>navigate('/contact')}>
+                    <div className='home__testimonial home__testimonial--landing' >
                         <h3 className='home__customer home__customer--landing'>Easy Insurance</h3>
                         <h3 className={`home__customer  home__customer--sub`}>Better approval ratings by insurance companies</h3>
                     </div>
-                    <div className='home__testimonial home__testimonial--landing' onClick={()=>navigate('/contact')}>
+                    <div className='home__testimonial home__testimonial--landing' >
                         <h3 className='home__customer home__customer--landing'>Most energy efficient roof</h3>
                         <h3 className={`home__customer  home__customer--sub`}>Save up to 40% in A/C costs</h3>
                     </div>
-                    <div className='home__testimonial home__testimonial--landing' onClick={()=>navigate('/contact')}>
+                    <div className='home__testimonial home__testimonial--landing' >
                         <h3 className='home__customer home__customer--landing'>Get the roof of the future</h3>
                         <h3 className={`home__customer  home__customer--sub`}>50 roof metal roof</h3>
                     </div>
-                    <div className='home__testimonial home__testimonial--landing' onClick={()=>navigate('/contact')}>
+                    <div className='home__testimonial home__testimonial--landing' >
                         <h3 className='home__customer home__customer--landing'>Financing</h3>
                         <h3 className={`home__customer  home__customer--sub`}>100% financing is available</h3>
                     </div>
-                    <div className='home__testimonial home__testimonial--landing' onClick={()=>navigate('/contact')}>
+                    <div className='home__testimonial home__testimonial--landing' >
                         <h3 className='home__customer home__customer--landing'>Green</h3>
                         <h3 className={`home__customer  home__customer--sub`}>At least 25% recycled content and becomes 100% at the end of its life</h3>
                     </div>
-                    <div className='home__testimonial home__testimonial--landing' onClick={()=>navigate('/contact')}>
+                    <div className='home__testimonial home__testimonial--landing' >
                         <h3 className='home__customer home__customer--landing'>Estimate today</h3>
                         <h3 className={`home__customer  home__customer--sub`}>Contact us for an estimate today</h3>
                     </div>
@@ -109,7 +109,7 @@ const FourWeeks = () => {
                     <h1 className='home__heading'>recent projects:</h1>
                     <div className='home__container home__container--projects'>
                         {projects.map((project) => (
-                            <img onClick={()=>{navigate(`project/${project._id}`)}} className='home__work-div' key={project._id} src={project.image.url} /*style={{ backgroundImage: `url(${project.image.url})` }}*//>
+                            <img onClick={()=>{navigate(`/project/${project._id}`)}} className='home__work-div' key={project._id} src={project.image.url} /*style={{ backgroundImage: `url(${project.image.url})` }}*//>
                         ))}
                         
                     </div>

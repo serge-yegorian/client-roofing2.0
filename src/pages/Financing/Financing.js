@@ -75,19 +75,19 @@ const Financing = () => {
             </section>
             <section className='home__section '>
                 <div className='home__container'>
-                    <div className='home__testimonial home__testimonial--landing' onClick={()=>navigate('/contact')}>
+                    <div className='home__testimonial home__testimonial--landing'>
                         <h3 className={`home__customer home__customer--landing `}>$0 down</h3>
                         <p className='home__description'>No downpayment required</p>
                     </div>
-                    <div className='home__testimonial home__testimonial--landing' onClick={()=>navigate('/contact')}>
+                    <div className='home__testimonial home__testimonial--landing'>
                         <h3 className='home__customer home__customer--landing'>Most properties qualify</h3>
                         <p className='home__description'>Small and old roofs qualify for our work</p>
                     </div>
-                    <div className='home__testimonial home__testimonial--landing' onClick={()=>navigate('/contact')}>
+                    <div className='home__testimonial home__testimonial--landing'>
                         <h3 className='home__customer home__customer--landing'>Approval not based on credit score</h3>
                         <p className='home__description'>We help people with all kinds of financial situations</p>
                     </div>
-                    <div className='home__testimonial home__testimonial--landing' onClick={()=>navigate('/contact')}>
+                    <div className='home__testimonial home__testimonial--landing'>
                         <h3 className='home__customer home__customer--landing'>Affordable payments</h3>
                         <p className='home__description'>We allow you to make more smaller payments </p>
                     </div>
@@ -98,7 +98,7 @@ const Financing = () => {
                     <h1 className='home__heading'>recent projects:</h1>
                     <div className='home__container home__container--projects'>
                         {projects.map((project) => (
-                            <img onClick={()=>{navigate(`project/${project._id}`)}} className='home__work-div' key={project._id} src={project.image.url} /*style={{ backgroundImage: `url(${project.image.url})` }}*//>
+                            <img onClick={()=>{navigate(`/project/${project._id}`)}} className='home__work-div' key={project._id} src={project.image.url} /*style={{ backgroundImage: `url(${project.image.url})` }}*//>
                         ))}
                         
                     </div>
