@@ -118,7 +118,7 @@ const Future = () => {
             <form className='contact__form' onSubmit={sendEmail} ref={formRef}>
                 <h1 className='contact__heading'>Get a Quote Today</h1>
                 <p className='contact__description'>We answer in less than 24 hours</p>
-                <a className='contact__description contact__description--phone' href='tel:866-869-6166' >(866) 869-6166</a>
+                <a className='contact__description contact__description--phone' href='tel:561-336-0523' >(561) 336-0523</a>
                 <div className='contact__input-div'>
                     <input required className='contact__input' name='name' id='name2' />
                     <label className='contact__label' htmlFor='name2'>Name:</label>
