@@ -43,7 +43,7 @@ const Future = () => {
                 <div className='home__container home__container--black'>
                     <div>
                     <h1 className='home__heading'>Metal roof is the future</h1>
-                    <p className='home__slogan'>Have all benefits of a metal roof!</p>
+                    <p className='home__slogan'>Financing available!</p>
                     </div>
                     <div className='home__form'>
                     <form className='contact__form contact__form--landing' onSubmit={sendEmail} ref={formRef}>
